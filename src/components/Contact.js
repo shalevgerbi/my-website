@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import pdf from '../images/Shalev-Gerbi-resume.pdf'
+import {DocumentIcon} from '@heroicons/react/solid'
+import emailjs from 'emailjs'
+import{ init } from '@emailjs/browser';
+
 export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -11,18 +17,42 @@ export default function Contact() {
       .join('&');
   }
   function handleSubmit(e) {
+    init("J4PfUxoBMyY9Jnaw7");
     e.preventDefault();
-    fetch('/', {
-      method: 'POST',
-      headers: { 'content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', name, email, message }),
-    })
-      .then(() => alert('Message sent!'))
-      .catch((error) => alert(error));
+    emailjs.send("service_9khoz3s","template_0zibtzh");
+    alert(`mail: ${email}, name: ${name}, message: ${message}`);    
+    window.open('mailto:shalev@gmail.com');
+    // fetch('/', {
+    //   method: 'POST',
+    //   headers: { 'content-Type': 'application/x-www-form-urlencoded' },
+    //   body: encode({ 'form-name': 'contact', name, email, message }),
+    // })
+    // send(
+    //   'SERVICE ID',
+    //   'TEMPLATE ID',
+    //   toSend,
+    //   'User ID'
+    // )
+    //   .then((response) => {
+    //     console.log('SUCCESS!', response.status, response.text);
+    //   })
+    //   .catch((err) => {
+    //     console.log('FAILED...', err);
+    //   })
+    //   // .then(() => alert('Message sent!'))
+    //   // .catch((error) => alert(error));
   }
   return (
     
     <section id="contact" className="relative">
+      <div  className="mt-5 w-56 m-auto border-4 rounded-xl hover:opacity-70 ">
+        <a href={pdf} className="items-center">
+        <div className="flex">
+      <DocumentIcon className="w-32 h-20 mr-0"/>
+      <h1 className="text-3xl text-center cursor-pointer mr-5 m-auto ml-0 whitespace-nowrap">My CV</h1>
+      </div>
+      </a>
+    </div>
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
@@ -60,7 +90,9 @@ export default function Contact() {
           </div>
         </div>
         <form
+          action="mailto:shalevgerb@gmail.com"
           // netlify
+          method="post"
           onSubmit={handleSubmit}
           name="contact"
           className="lg:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
@@ -81,7 +113,9 @@ export default function Contact() {
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               id="name"
               name="name"
+              
               onChange={(e) => setName(e.target.value)}
+              
             />
           </div>
           <div className="relative mb-4">

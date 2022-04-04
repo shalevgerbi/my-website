@@ -6,6 +6,8 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Testimonials from './components/Testimonials';
 import Game from './components/Game';
+import React from 'react';
+
 
 export default function App() {
   return (
@@ -17,6 +19,7 @@ export default function App() {
       <Skills />
       <Testimonials />
       <Game />
+      
       <Contact />
       
     </main>

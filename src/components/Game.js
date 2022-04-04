@@ -1,4 +1,4 @@
-
+import React from 'react'
 import Board from './Board'
 import Square from "./Square";
 import {useEffect, useState} from "react";
