@@ -20,7 +20,7 @@ export const projects = [
     subtitle: 'Python',
     description:
       'A Mobile app - Still in development, finding frequencies and notes from audio using matlab scipy and Machine Learning',
-    image: '/images/piano.jpg',
+    image: '/images/Piano.jpg',
     link: 'https://github.com/shalevgerbi/Final-Project-v1.0',
   },
   {

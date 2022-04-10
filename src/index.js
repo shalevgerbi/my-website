@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+
 ReactDOM.render(
   <React.StrictMode>
+    {document.title = "Shalev Gerbi"}
     <App className="scroll-smooth"/>
+    
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
