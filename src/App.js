@@ -7,9 +7,11 @@ import Skills from './components/Skills';
 import Testimonials from './components/Testimonials';
 import Game from './components/Game';
 import React from 'react';
+import Footer from './components/Footer';
 
 
 export default function App() {
+  
   return (
     <main className="text-gray-400 bg-gray-900 body-font scroll-smooth">
     
@@ -21,6 +23,7 @@ export default function App() {
       <Game />
       
       <Contact />
+      <Footer />
       
     </main>
     

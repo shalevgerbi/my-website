@@ -1,33 +1,33 @@
 export const projects = [
   {
     title: 'Netflix Clone',
-    subtitle: 'React and Firebase',
+    subtitle: 'React & Firebase',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+      'A clone for the UI of Netflix, with options to pay with stripe and fetchig data from the movies DB',
     image: '/images/netflixClone.png',
     link: 'https://netflix-clone-1a2fa.web.app/',
   },
   {
     title: 'Chess AI',
-    subtitle: 'React and Python',
+    subtitle: 'React & Stockfish API',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+      'A sophisticated chess website using Stockfish API that always win',
     image: '/images/chess.jpg',
     link: 'https://chess-ai-637a5.web.app/',
   },
   {
     title: 'Sound To Notes',
-    subtitle: 'React and Firebase',
+    subtitle: 'Python',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+      'A Mobile app - Still in development, finding frequencies and notes from audio using matlab scipy and Machine Learning',
     image: '/images/piano.jpg',
     link: 'https://github.com/shalevgerbi/Final-Project-v1.0',
   },
   {
     title: 'Library Website',
-    subtitle: 'React Hooks',
+    subtitle: 'JSP & Servlet',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+      'A Library Website using JSP & Servlet connectiong to Apache Derby DB and running on TomCat Server where you can borrow books', 
     image: '/images/book.jpg',
     link: 'https://github.com/shalevgerbi/Web-Servlet-Library-For-Students',
   },
@@ -42,6 +42,6 @@ export const skills = [
   'JavaScript',
   'React.js',
   'ASP.Net',
-  'Object Oriented Programming',
+  'jQuery',
 ];
 export const testimonials = [];
