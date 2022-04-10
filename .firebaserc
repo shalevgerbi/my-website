@@ -1,7 +1,5 @@
 {
   "projects": {
-    "default": "shalev-gerbi",
-    "hosting": "shalev-gerbi"
-  },
-  "targets": {}
+    "default": "shalev-gerbi"
+  }
 }
