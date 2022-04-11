@@ -2,16 +2,14 @@ import React, { useRef } from "react";
 import pdf from "../images/Shalev-Gerbi-resume.pdf";
 import { DocumentIcon } from "@heroicons/react/solid";
 import emailjs from "@emailjs/browser";
-// import{ init } from '@emailjs/browser';
-// import apiKey from '../.env'
 
 export default function Contact() {
- // const [name, setName] = useState("");
- // const [email, setEmail] = useState("");
- // const [message, setMessage] = useState("");
+  const {
+    REACT_APP_USER_ID,
+    REACT_APP_TEMPLATE_ID,
+    REACT_APP_SERVICE_ID,
+  } = process.env;
 
-  const {REACT_APP_USER_ID, REACT_APP_TEMPLATE_ID, REACT_APP_SERVICE_ID} = process.env;
-  
   const form = useRef();
   let sentMail = false;
   const sendEmail = (e) => {
@@ -21,7 +19,7 @@ export default function Contact() {
         REACT_APP_SERVICE_ID,
         REACT_APP_TEMPLATE_ID,
         form.current,
-        REACT_APP_USER_ID,
+        REACT_APP_USER_ID
       )
       .then(
         (result) => {
@@ -31,28 +29,20 @@ export default function Contact() {
           console.log(error.text);
         }
       );
-      e.target.reset();
-      alert("Message Sent Successfully")
-      window.sessionStorage.setItem("sentMail",true);
-      sentMail=true;
-      document.getElementById("submitButton").hidden = true;
+    e.target.reset();
+    alert("Message Sent Successfully");
+    window.sessionStorage.setItem("sentMail", true);
+    sentMail = true;
+    document.getElementById("submitButton").hidden = true;
   };
-sentMail = window.sessionStorage.getItem("sentMail")
-if(sentMail==null) {
-  sentMail =false;
-}
-// if(sentMail) {
-//   document.getElementById("submitButton").hidden="true"
-  
-// }
-// else{
-//   document.getElementById("submitButton").hidden="false";
-// }
-  
-  
+  sentMail = window.sessionStorage.getItem("sentMail");
+  if (sentMail == null) {
+    sentMail = false;
+  }
+
   return (
     <section id="contact" className="relative">
-      <div className="mt-5 w-56 m-auto border-2 rounded-xl hover:opacity-70 ">
+      <div className="mt-5 w-56 m-auto container border-2 rounded-xl hover:opacity-70 ">
         <a href={pdf} className="items-center">
           <div className="flex">
             <DocumentIcon className="w-32 h-20 mr-0" />
@@ -111,7 +101,8 @@ if(sentMail==null) {
             Hire Me
           </h2>
           <p className="text-center leading-relaxed mb-5">
-            If you would like to here more about me,<br/> send me an email
+            If you would like to here more about me,
+            <br /> send me an email
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -134,7 +125,6 @@ if(sentMail==null) {
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               id="email"
               name="email"
-              //onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="relative mb-4">
@@ -145,20 +135,17 @@ if(sentMail==null) {
               id="message"
               name="message"
               className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-              //onChange={(e) => setMessage(e.target.value)}
             />
           </div>
-          {!sentMail &&
-          <button
-          
-          id="submitButton"
-          
-            type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-          >
-            Submit
-          </button>
-}
+          {!sentMail && (
+            <button
+              id="submitButton"
+              type="submit"
+              className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+              Submit
+            </button>
+          )}
         </form>
       </div>
     </section>

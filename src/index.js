@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    {document.title = "Shalev Gerbi"}
+    
     <App className="scroll-smooth"/>
     
     
