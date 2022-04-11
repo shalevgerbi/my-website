@@ -12,10 +12,9 @@ import { useEffect } from "react/cjs/react.development";
 
 
 export default function App() {
-  useEffect(() => {
-    //Exporting the title to the app
+  
     document.title = "Shalev Gerbi";
-  }, []);
+  
 
   return (
     <main className="text-gray-400 bg-gray-900 body-font scroll-smooth">
