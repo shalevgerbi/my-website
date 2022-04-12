@@ -19,7 +19,7 @@ export const projects = [
     title: 'Sound To Notes',
     subtitle: 'Python',
     description:
-      'A Mobile app - Still in development, finding frequencies and notes from audio using matlab scipy and Machine Learning',
+      'A Mobile app - Still in development, finding frequencies and notes from audio using matplotlib, scipy and Machine Learning',
     image: '/images/Piano.jpg',
     link: 'https://github.com/shalevgerbi/Final-Project-v1.0',
   },
@@ -27,7 +27,7 @@ export const projects = [
     title: 'Library Website',
     subtitle: 'JSP & Servlet',
     description:
-      'A Library Website using JSP & Servlet connectiong to Apache Derby DB and running on TomCat Server where you can borrow books', 
+      'A Library Website using JSP & Servlet connectiong to Apache Derby DB and running on TomCat Server where you can borrow books and add students', 
     image: '/images/book.jpg',
     link: 'https://github.com/shalevgerbi/Web-Servlet-Library-For-Students',
   },

@@ -89,7 +89,6 @@ export default function Contact() {
           </div>
         </div>
         <form
-          action="mailto:shalevgerb@gmail.com"
           // netlify
           method="post"
           ref={form}
