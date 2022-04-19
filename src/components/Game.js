@@ -119,12 +119,12 @@ export default function Game() {
   };
 
   return (
-    <section id="game">
-      <div className="Game container w-80 m-auto ">
-        <h1 className="text-center m-5 p-2 sm:text-4xl text-3xl font-medium title-font text-white mb-4">
+    <section id="game" className="h-screen w-screen lg:h-full lg:w-full">
+      <div className="Game container w-full h-full m-auto ">
+        <h1 className="text-center mt-5  p-2 text-7xl whitespace-nowrap lg:text-3xl font-medium title-font text-white mb-4">
           Let's Play X/O
         </h1>
-        <h1 className="text-center mb-2 pb-2 sm:text-">You can win if you'll really try</h1>
+        <h1 className="text-center text-5xl mb-5 lg:mb-2 pb-2">You can win if you'll really try</h1>
         <Board>
           {squares.map((square, index) => (
             <Square
@@ -137,14 +137,14 @@ export default function Game() {
         </Board>
         <div id="won" className="result">
           {winner && winner === "X" && (
-            <div className="p-5 text-center text-3xl bg-green-600 text-black visible">
+            <div className="lg:w-1/2 items-center m-auto p-10 lg:p-5 text-center text-7xl lg:text-3xl bg-green-600 text-black visible">
               You Won!
             </div>
           )}
           {winner && winner === "O" && (
             <div
               id="lose"
-              className="p-5 text-center text-3xl bg-red-600 text-black visible"
+              className="lg:w-1/2 items-center m-auto p-10 lg:p-5 text-center text-7xl lg:text-3xl bg-red-600 text-black visible"
             >
               You Lost!
             </div>
@@ -152,7 +152,7 @@ export default function Game() {
           {winner && winner === "Tie" && (
             <div
               id="Tie"
-              className="p-5 text-center text-3xl bg-yellow-600 text-black visible"
+              className="lg:w-1/2 items-center m-auto p-10 lg:p-5 text-center text-7xl lg:text-3xl bg-yellow-600 text-black visible"
             >
               It's A Tie!
             </div>
@@ -161,7 +161,7 @@ export default function Game() {
 
         <button
           onClick={() => restart()}
-          className="text-center m-auto mt-5 hover:opacity-70 border rounded-lg p-3 flex"
+          className="text-center text-7xl p-10 lg:text-3xl m-auto mt-10 hover:opacity-70 border rounded-lg  flex"
         >
           New Game?
         </button>

@@ -17,7 +17,7 @@ export default function App() {
   
 
   return (
-    <main className="text-gray-400 bg-gray-900 body-font scroll-smooth">
+    <main className="text-gray-400 bg-gray-900 body-font scroll-smooth w-screen">
       <Navbar />
       <About />
       <Projects />

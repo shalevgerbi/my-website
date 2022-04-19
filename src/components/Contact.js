@@ -41,19 +41,19 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative">
-      <div className="mt-5 w-56 m-auto container border-2 rounded-xl hover:opacity-70 ">
+    <section id="contact" className="lg:w-full lg:h-full relative mb-42">
+      <div className="mt-5 mb-20 w-1/2 h-1/2 lg:w-56 m-auto container border-2 rounded-3xl lg:rounded-xl hover:opacity-70 ">
         <a href={pdf} className="items-center">
           <div className="flex">
-            <DocumentIcon className="w-32 h-20 mr-0" />
-            <h1 className="text-3xl text-center cursor-pointer mr-5 m-auto ml-0 whitespace-nowrap">
+            <DocumentIcon className="w-full h-full lg:w-32 lg:h-20 mr-0" />
+            <h1 className="text-7xl lg:text-3xl text-center cursor-pointer mr-5 m-auto ml-0 whitespace-nowrap">
               My CV
             </h1>
           </div>
         </a>
       </div>
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+      <div className="container-lg  h-screen lg:h-screen  w-full px-5 py-10 mx-auto lg:flex flex-nowrap">
+        <div className="lg:h-full lg:w-2/3 bg-gray-900 rounded-lg overflow-hidden ml-10 mr-10 p-10 h-1/2 flex items-end justify-start relative">
           <iframe
             width="100%"
             height="100%"
@@ -65,23 +65,23 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=israel+kfar+yona&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
+          <div className="w-full lg:w-1/2 ml-20 mr-20 lg:ml-0 lg:mr-0 bg-gray-900 relative lg:flex lg:flex-wrap py-6 rounded shadow-md">
+            <div className=" lg:w-1/2 px-6 text-center lg:text-left">
+              <h2 className="title-font font-semibold text-white tracking-widest text-4xl lg:text-sm">
                 ADRESS
               </h2>
-              <p className="mt-1">
+              <p className="mt-1 text-3xl text-center lg:text-sm lg:text-left">
                 Yasmin 11 <br />
                 Kfar Yona, Israel
               </p>
             </div>
-            <div className="lg:w-1/2 px-6 mr-2 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs ">
+            <div className="lg:w-1/2 px-6 mr-2 mt-4 lg:mt-0 text-center lg:text-left">
+              <h2 className="title-font font-semibold text-white text-center tracking-widest text-4xl lg:text-sm lg:text-left ">
                 EMAIL
               </h2>
               <a
                 href="mailto: shalevgerb@gmail.com"
-                className="text-indigo-400  leading-relaxed cursor-pointer hover:text-indigo-200"
+                className="text-indigo-400  leading-relaxed cursor-pointer lg:text-sm text-3xl lg:text-left text-center hover:text-indigo-200"
               >
                 shalevgerb@gmail.com
               </a>
@@ -96,51 +96,51 @@ export default function Contact() {
           name="contact"
           className="lg:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          <h2 className="text-center text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
+          <h2 className="text-center text-white text-7xl lg:text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
-          <p className="text-center leading-relaxed mb-5">
+          <p className="text-center lg:text-lg text-5xl leading-relaxed mb-5">
             If you would like to here more about me,
-            <br /> send me an email
+            <br /> send me an Email
           </p>
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+          <div className="relative mb-4 w-full">
+            <label htmlFor="name" className="mb-10 lg:mt-0 leading-7 text-5xl lg:text-sm text-gray-400">
               Name
             </label>
             <input
               type="text"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full lg:h-10 h-20 mt-5 lg:mt-0 bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               id="name"
               name="name"
-              //onChange={(e) => setName(e.target.value)}
+              
             />
           </div>
-          <div className="relative mb-4">
-            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
+          <div className="relative mb-4 mt-4">
+            <label htmlFor="name" className="mb-10 lg:mt-0 leading-7 text-5xl lg:text-sm text-gray-400">
               Email
             </label>
             <input
               type="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full lg:h-10 h-20 mt-5 lg:mt-0 bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               id="email"
               name="email"
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="mesage" className="leading-7 text-sm text-gray-400">
+            <label htmlFor="mesage" className="mb-10 lg:mt-0 text-5xl lg:text-sm leading-7 text-gray-400">
               Message
             </label>
             <textarea
               id="message"
               name="message"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full  mt-5 lg:mt-0 bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-52 lg:h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
             />
           </div>
           {!sentMail && (
             <button
               id="submitButton"
               type="submit"
-              className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              className="text-white lg:h-20 h-32 text-5xl bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded lg:text-lg"
             >
               Submit
             </button>
