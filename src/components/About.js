@@ -39,7 +39,7 @@ export default function About() {
               to="projects"
               smooth={true}
               duration={1000}
-              className="w-1/2 h-1/2 m-auto text-center cursor-pointer ml-6 inline-flex text-gray-400 bg-gray-800 border-0 lg:py-3  py-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-lg lg:text-lg text-6xl md:text-4xl"
+              className="w-1/2 h-1/2 m-auto text-center cursor-pointer ml-6 inline-flex text-gray-400 bg-gray-800  border-0 lg:py-3  py-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-lg lg:text-lg text-6xl md:text-4xl"
             >
               <label className="m-auto text-center">
               See My Past Work

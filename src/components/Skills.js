@@ -4,14 +4,14 @@ import { skills } from '../data';
 
 export default function Skills() {
   return (
-    <section id="skills" className="container-lg w-screen h-full lg:mt-48 md:mt-48">
-      <div className="w-full h-full px-5 mb-10 mx-auto">
+    <section id="skills" className="container-lg w-screen h-fit lg:mt-48 md:mt-48">
+      <div className="w-full h-fit px-5 mb-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-40 lg:w-10 inline-block mb-4" />
           <h1 className="text-7xl lg:text-3xl font-medium title-font text-white mb-4">
             Skills &amp; Technologies
           </h1>
-          <p className="text-5xl lg:text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+          <p className="text-5xl lg:text-3xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
             Over the years i expended my knowledge at the following technologies:
           </p>
         </div>

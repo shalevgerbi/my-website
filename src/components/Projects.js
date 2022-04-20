@@ -11,7 +11,7 @@ export default function Projects() {
           <h1 className="lg:text-4xl text-7xl font-medium title-font mb-4 text-white">
             Apps I've Built
           </h1>
-          <p className="lg:w-2/3 text-5xl mx-auto leading-relaxed lg:text-base">
+          <p className="lg:w-2/3 text-5xl mx-auto leading-relaxed  lg:text-3xl">
             During my studies and in my spare time I made the following apps
             (more on GitHub):
           </p>

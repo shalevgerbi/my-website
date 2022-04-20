@@ -121,10 +121,10 @@ export default function Game() {
   return (
     <section id="game" className="h-screen w-screen lg:h-full lg:w-full">
       <div className="Game container w-full h-full m-auto ">
-        <h1 className="text-center mt-5  p-2 text-7xl whitespace-nowrap lg:text-3xl font-medium title-font text-white mb-4">
+        <h1 className="text-center mt-5  p-2 text-7xl whitespace-nowrap lg:text-5xl font-medium title-font text-white mb-4">
           Let's Play X/O
         </h1>
-        <h1 className="text-center text-5xl mb-5 lg:mb-2 pb-2">You can win if you'll really try</h1>
+        <h1 className="text-center text-5xl lg:text-3xl mb-5 lg:mb-2 pb-2">You can win if you'll really try</h1>
         <Board>
           {squares.map((square, index) => (
             <Square

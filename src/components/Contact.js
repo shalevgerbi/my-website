@@ -96,7 +96,7 @@ export default function Contact() {
           name="contact"
           className="lg:w-1/3 flex flex-col md:ml-auto h-fit w-full  mt-8 md:mt-0"
         >
-          <h2 className="text-center text-white text-7xl lg:text-3xl mb-1 font-medium title-font">
+          <h2 className="text-center mt-10 text-white text-7xl lg:text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
           <p className="text-center lg:text-lg text-5xl leading-relaxed mb-5">
