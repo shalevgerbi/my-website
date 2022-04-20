@@ -4,7 +4,7 @@ import { projects } from "../data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="container-lg h-screen w-screen lg:h-full text-gray-400 bg-gray-900 body-font">
+    <section id="projects" className="h-fit w-screen lg:w-full lg:h-full text-gray-400 bg-gray-900 body-font">
       <div className="lg:container-lg fill mx-auto text-center lg:px-14">
         <div className="flex  flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block lg:w-10 mb-4 w-40" />

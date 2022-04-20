@@ -3,7 +3,7 @@ import React from "react";
 import Link from "react-scroll/modules/components/Link";
 export default function Navbar() {
   return (
-    <section className="w-full bg-gray-800 fixed md:sticky top-0 z-50 bg-opacity-90">
+    <section className="w-screen bg-gray-800 fixed md:sticky top-0 z-50 bg-opacity-90">
       <div className="flex flex-wrap  pt-5 pb-5 flex-col md:flex-row items-center">
         <p className="ml-5 title-font font-medium text-white mb-4  md:mb-0">
           <Link

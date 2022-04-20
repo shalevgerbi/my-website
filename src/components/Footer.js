@@ -4,8 +4,8 @@ import { ChevronUpIcon } from "@heroicons/react/outline";
 import Link from "react-scroll/modules/components/Link";
 export default function Footer() {
   return (
-      <section className="footer h-full bg-black pt-5 mt-5">
-    <div className="w-full lg:w-1/2 align-center m-auto place-content-center">
+      <section className="footer h-fit bg-black pt-5 mt-5">
+    <div className="w-full lg:w-1/2  align-center m-auto place-content-center">
       <div className="w-full lg:w-1/2 align-center m-auto">
         <Link to="about" smooth="true" className="">
           <ChevronUpIcon

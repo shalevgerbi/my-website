@@ -4,7 +4,7 @@ import { skills } from '../data';
 
 export default function Skills() {
   return (
-    <section id="skills" className="container-lg w-screen h-screen lg:mt-48 md:mt-48">
+    <section id="skills" className="container-lg w-screen h-full lg:mt-48 md:mt-48">
       <div className="w-full h-full px-5 mb-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-40 lg:w-10 inline-block mb-4" />

@@ -41,7 +41,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="lg:w-full lg:h-full relative mb-42">
+    <section id="contact" className="lg:w-screen md:fit h-full lg:h-full relative mb-42">
       <div className="mt-5 mb-20 w-1/2 h-1/2 lg:w-56 m-auto container border-2 rounded-3xl lg:rounded-xl hover:opacity-70 ">
         <a href={pdf} className="items-center">
           <div className="flex">
@@ -52,7 +52,7 @@ export default function Contact() {
           </div>
         </a>
       </div>
-      <div className="container-lg  h-screen lg:h-screen  w-full px-5 py-10 mx-auto lg:flex flex-nowrap">
+      <div className="container-lg  h-fit lg:h-screen  w-full px-5 py-10 mx-auto lg:flex flex-nowrap">
         <div className="lg:h-full lg:w-2/3 bg-gray-900 rounded-lg overflow-hidden ml-10 mr-10 p-10 h-1/2 flex items-end justify-start relative">
           <iframe
             width="100%"
@@ -94,14 +94,14 @@ export default function Contact() {
           ref={form}
           onSubmit={sendEmail}
           name="contact"
-          className="lg:w-1/3 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          className="lg:w-1/3 flex flex-col md:ml-auto h-fit w-full  mt-8 md:mt-0"
         >
           <h2 className="text-center text-white text-7xl lg:text-3xl mb-1 font-medium title-font">
             Hire Me
           </h2>
           <p className="text-center lg:text-lg text-5xl leading-relaxed mb-5">
-            If you would like to here more about me,
-            <br /> send me an Email
+            If you would like to hear more about me,
+            <br /> send me an Email.
           </p>
           <div className="relative mb-4 w-full">
             <label htmlFor="name" className="mb-10 lg:mt-0 leading-7 text-5xl lg:text-sm text-gray-400">
