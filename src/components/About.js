@@ -3,8 +3,8 @@ import Link from "react-scroll/modules/components/Link";
 import image from ".././images/coding1.jpg";
 export default function About() {
   return (
-    <section id="about" className="relative sm:static pt-10 w-screen ">
-      <div className="lg:container container mx-auto lg:flex px-10 py-20 md:flex-row flex-col items-center w-full mt-10 lg:mt-0">
+    <section id="about" className="relative pt-10 w-full ">
+      <div className="lg:container container mx-auto lg:flex  py-20 md:flex-row flex-col items-center w-full mt-10 lg:mt-0">
         <div
           id="scale-up-left"
           className="lg:flex-grow lg:w-1/2  lg:pr-24  lg:flex lg:flex-col md:items-start lg:text-left mb-16 md:mb-0 items-center text-center"
