@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section id="projects" className="h-fit w-screen lg:w-full lg:h-full text-gray-400 bg-gray-900 body-font">
       <div className="lg:container-lg fill mx-auto text-center lg:px-14">
-        <div className="flex  flex-col w-full mb-20">
+        <div className="flex pl-20 pr-20  flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block lg:w-10 mb-4 w-40" />
           <h1 className="lg:text-4xl text-7xl font-medium title-font mb-4 text-white">
             Apps I've Built
@@ -16,7 +16,7 @@ export default function Projects() {
             (more on GitHub):
           </p>
         </div>
-        <div className="pl-10 pr-10  h-full items-center ">
+        <div className="pl-20 pr-20  h-full items-center ">
           {projects.map((project) => (
             <a
               href={project.link}

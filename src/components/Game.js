@@ -119,7 +119,7 @@ export default function Game() {
   };
 
   return (
-    <section id="game" className="h-screen w-screen lg:h-full lg:w-full">
+    <section id="game" className="h-fit w-screen lg:h-fit lg:w-full">
       <div className="Game container w-full h-full m-auto ">
         <h1 className="text-center mt-5  p-2 text-7xl whitespace-nowrap lg:text-5xl font-medium title-font text-white mb-4">
           Let's Play X/O

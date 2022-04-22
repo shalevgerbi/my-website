@@ -4,7 +4,7 @@ import Link from "react-scroll/modules/components/Link";
 export default function Navbar() {
   return (
     <section className="w-screen bg-gray-800 fixed md:sticky top-0 z-50 bg-opacity-90">
-      <div className="flex flex-wrap  pt-5 pb-5 flex-col md:flex-row items-center">
+      <div className="flex flex-wrap  pt-5 pb-5 md:items-center flex-col md:flex-row items-center">
         <p className="ml-5 title-font font-medium text-white mb-4  md:mb-0">
           <Link
             to="about"
@@ -41,12 +41,12 @@ export default function Navbar() {
             Let's Play
           </Link>
           </nav>
-          <div className="">
+          <div className="pr-5 ">
         <Link
           to="contact"
           smooth={true}
           duration={1000}
-          className="text-3xl lg:text-xl inline-flex mr-5 items-center bg-gray-800 border-0 py-1 fucus:outline-none hover:bg-gray-700 rounded  mt-4 md:mt-0 cursor-pointer"
+          className="text-3xl  lg:text-xl inline-flex mr-5 items-center bg-gray-800 border-0 py-1 fucus:outline-none hover:bg-gray-700 rounded  mt-4 md:ml-5 md:mt-0 cursor-pointer"
         >
           Hire Me
           <ArrowRightIcon className="w-10 h-10 lg:w-4 lg:h-4 ml-1 mt-1" />

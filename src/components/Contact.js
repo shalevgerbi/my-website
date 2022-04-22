@@ -41,8 +41,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="lg:w-screen md:fit h-full lg:h-full relative mb-42">
-      <div className="mt-5 mb-20 w-1/2 h-1/2 lg:w-56 m-auto container border-2 rounded-3xl lg:rounded-xl hover:opacity-70 ">
+    <section id="contact" className="lg:w-fit md:h-full pt-56 h-full lg:h-full relative">
+      <div className="mt-5 mb-20 w-1/2 h-full lg:w-56 m-auto container border-2 rounded-3xl lg:rounded-xl hover:opacity-70 ">
         <a href={pdf} className="items-center">
           <div className="flex">
             <DocumentIcon className="w-full h-full lg:w-32 lg:h-20 mr-0" />
@@ -52,8 +52,11 @@ export default function Contact() {
           </div>
         </a>
       </div>
-      <div className="container-lg  h-fit lg:h-screen  w-full px-5 py-10 mx-auto lg:flex flex-nowrap">
-        <div className="lg:h-full lg:w-2/3 bg-gray-900 rounded-lg overflow-hidden ml-10 mr-10 p-10 h-1/2 flex items-end justify-start relative">
+      <div className="container lg:h-fit h-full w-full px-5 py-10 mx-auto lg:flex flex-nowrap relative ">
+        
+        <div className="lg:h-full h-full  w-full lg:w-2/3   bg-gray-900 rounded-lg overflow-hidden lg:overflow-visible  mr-10 pb-5 lg:pb-0 lg:mt-10 flex lg:pt-5 items-end relative">
+          <div className="h-full lg:h-full mb-96 ">
+          
           <iframe
             width="100%"
             height="100%"
@@ -65,17 +68,17 @@ export default function Contact() {
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=israel+kfar+yona&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
-          <div className="w-full lg:w-1/2 ml-20 mr-20 lg:ml-0 lg:mr-0 bg-gray-900 relative lg:flex lg:flex-wrap py-6 rounded shadow-md">
-            <div className=" lg:w-1/2 px-6 text-center lg:text-left">
+          <div className="w-full h-full lg:h-full  lg:w-full mr-20 lg:p-5  lg:ml-10 lg:mr-0  bg-gray-900  relative lg:flex lg:flex-wrap py-5 rounded shadow-md">
+            <div className="m-auto lg:pb-0 lg:w-1/2 h-1/2   text-center lg:text-left">
               <h2 className="title-font font-semibold text-white tracking-widest text-4xl lg:text-sm">
                 ADRESS
               </h2>
-              <p className="mt-1 text-3xl text-center lg:text-sm lg:text-left">
+              <p className="mt-1 text-3xl text-center lg:text-sm lg:text-left whitespace-nowrap">
                 Yasmin 11 <br />
                 Kfar Yona, Israel
               </p>
             </div>
-            <div className="lg:w-1/2 px-6 mr-2 mt-4 lg:mt-0 text-center lg:text-left">
+            <div className="lg:w-1/2 h-full mt-4 lg:mt-0 text-center lg:text-left">
               <h2 className="title-font font-semibold text-white text-center tracking-widest text-4xl lg:text-sm lg:text-left ">
                 EMAIL
               </h2>
@@ -85,7 +88,9 @@ export default function Contact() {
               >
                 shalevgerb@gmail.com
               </a>
-            </div>
+              </div>
+         </div>
+            
           </div>
         </div>
         <form
@@ -94,7 +99,7 @@ export default function Contact() {
           ref={form}
           onSubmit={sendEmail}
           name="contact"
-          className="lg:w-1/3 flex flex-col md:ml-auto h-fit w-full  mt-8 md:mt-0"
+          className="mr-7 lg:w-1/3 flex flex-col md:ml-auto h-fit w-full  mt-8 md:mt-0"
         >
           <h2 className="text-center mt-10 text-white text-7xl lg:text-3xl mb-1 font-medium title-font">
             Hire Me

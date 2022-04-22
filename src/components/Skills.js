@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section id="skills" className="container-lg w-screen h-fit lg:mt-48 md:mt-48">
       <div className="w-full h-fit px-5 mb-10 mx-auto">
-        <div className="text-center mb-20">
+        <div className="px-20 text-center mb-20">
           <ChipIcon className="w-40 lg:w-10 inline-block mb-4" />
           <h1 className="text-7xl lg:text-3xl font-medium title-font text-white mb-4">
             Skills &amp; Technologies
@@ -15,12 +15,12 @@ export default function Skills() {
             Over the years i expended my knowledge at the following technologies:
           </p>
         </div>
-        <div className="w-full grid grid-rows-1 grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div className="w-3/5 grid grid-rows-1 grid-cols-1 lg:grid-rows-2 lg:grid-cols-2 lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           {skills.map((skill) => (
             <div key={skill} className="p-2 w-1.2 lg:w-full ">
-              <div className="bg-gray-800 rounded flex p-4 place-content-center h-full items-center transform hover:translate-x-2 ">
+              <div className="bg-gray-800 rounded flex p-4 lg:place-content-center h-full items-center transform hover:translate-x-2 ">
                 <BadgeCheckIcon className="text-green-400 w-20 h-20 lg:w-6 lg:h-6 origin-center items-center text-center flex-shrink-0 mr-4" />
-                <span className="text-center text-7xl lg:text-md title-font font-medium text-white lg:text-xl">
+                <span className="lg:text-center text-7xl lg:text-md title-font font-medium text-white lg:text-xl">
                   {skill}
                 </span>
               </div>
