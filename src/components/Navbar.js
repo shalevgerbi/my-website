@@ -4,8 +4,8 @@ import Link from "react-scroll/modules/components/Link";
 export default function Navbar() {
   return (
     <section className="w-screen bg-gray-800 fixed md:sticky top-0 z-50 bg-opacity-90">
-      <div className="flex flex-wrap  pt-5 pb-5 md:items-center flex-col md:flex-row items-center">
-        <p className="ml-5 title-font font-medium text-white mb-4  md:mb-0">
+      <div className="flex flex-wrap  pt-5 pb-5 md:items-center flex-col lg:flex-row items-center">
+        <p className="lg:ml-5 title-font font-medium text-white mb-4  md:mb-0">
           <Link
             to="about"
             className="text-5xl cursor-pointer lg:text-xl"
@@ -15,7 +15,7 @@ export default function Navbar() {
             Shalev Gerbi
           </Link>
         </p>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap  text-base">
+        <nav className="lg:mr-auto lg:ml-4 md:py-3 lg:py-1 lg:pl-4 md:border-gray-700 flex flex-wrap   text-base">
           <Link
             to="projects"
             className="mr-10 cursor-pointer hover:text-white text-3xl lg:text-xl lg:mr-5"
@@ -34,7 +34,7 @@ export default function Navbar() {
           </Link>
           <Link
             to="game"
-            className="mr-10 hover:text-white cursor-pointer text-3xl lg:text-xl lg:mr-5"
+            className="lg:mr-10 hover:text-white cursor-pointer text-3xl lg:text-xl lg:mr-5"
             smooth={true}
             duration={1000}
           >
@@ -46,7 +46,7 @@ export default function Navbar() {
           to="contact"
           smooth={true}
           duration={1000}
-          className="text-3xl  lg:text-xl inline-flex mr-5 items-center bg-gray-800 border-0 py-1 fucus:outline-none hover:bg-gray-700 rounded  mt-4 md:ml-5 md:mt-0 cursor-pointer"
+          className="text-3xl  lg:text-xl inline-flex lg:mr-5 items-center bg-gray-800 border-0 py-1 fucus:outline-none hover:bg-gray-700 rounded  mt-4 lg:ml-5 md:mt-0 cursor-pointer"
         >
           Hire Me
           <ArrowRightIcon className="w-10 h-10 lg:w-4 lg:h-4 ml-1 mt-1" />
