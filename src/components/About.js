@@ -4,10 +4,10 @@ import image from ".././images/coding1.jpg";
 export default function About() {
   return (
     <section id="about" className="relative pt-10 w-full ">
-      <div className="lg:container container mx-auto lg:flex  py-20 md:flex-row flex-col items-center w-full mt-10 lg:mt-0">
+      <div className="md:container container mx-auto lg:flex  py-20 md:flex-row flex-col items-center w-full mt-10 lg:mt-0">
         <div
           id="scale-up-left"
-          className="lg:flex-grow lg:w-1/2  lg:pr-24  lg:flex lg:flex-col md:items-start lg:text-left mb-16 md:mb-0 items-center text-center"
+          className="lg: container lg:flex-grow lg:ml-10 lg:w-1/2  lg:pr-24  lg:flex lg:flex-col md:items-start lg:text-left mb-16 md:mb-0 items-center text-center"
         >
           <h1 className="mt-10 lg:mt-0 text-center sm:whitespace-normal md:text-5xl lg:text-center title-font text-9xl lg:text-4xl font-medium text-white lg:whitespace-nowrap">
             Hi, I'm Shalev.
@@ -50,7 +50,7 @@ export default function About() {
 
         <div className="lg:max-w-lg lg:w-full w-full ">
           <img
-            className="p-5 mt-20 object-cover object-center rounded-lg w-screen blur-md"
+            className="p-5 lg:pr-10 mt-20 object-cover object-center rounded-lg w-screen blur-md"
             src={image}
             alt="coding"
           />
