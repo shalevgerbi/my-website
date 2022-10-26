@@ -22,11 +22,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-*.cache
-.github
-.vscode
-.firebaserc
-firebase.json
-package-lock.json
-/.firebase/*
-hosting*
