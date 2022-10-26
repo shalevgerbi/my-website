@@ -74,7 +74,6 @@ export default function Contact() {
                 ADRESS
               </h2>
               <p className="mt-1 text-3xl text-center lg:text-sm lg:text-left whitespace-nowrap">
-                Yasmin 11 <br />
                 Kfar Yona, Israel
               </p>
             </div>
